@@ -1,0 +1,26 @@
+{
+  "name": "jswrap-brunch",
+  "version": "0.0.1",
+  "description": "Custom JS Wrapper Plugin for Brunch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "brunch",
+    "wrapper",
+    "wrap",
+    "files",
+    "modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twooster/jswrap-brunch"
+  },
+  "homepage": "https://github.com/twooster/jswrap-brunch#readme",
+  "bugs": {
+    "url": "https://github.com/twooster/jswrap-brunch/issues"
+  },
+  "author": "Tony Wooster",
+  "license": "MIT"
+}
