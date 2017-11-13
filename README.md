@@ -23,9 +23,7 @@ file. Its structure is as follows:
 // brunch-config.js
 
 {
-  ...
   plugins: {
-    ...
     jsWrap: {
       debug: [Boolean],
       wrappers: [
@@ -34,9 +32,12 @@ file. Its structure is as follows:
           wrap: <Function(fileContents: String): String>,
           halt: [Boolean]
         },
+        ...
       ]
-    }
-  }
+    },
+    ...
+  },
+  ...
 }
 ```
 
