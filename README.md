@@ -16,12 +16,7 @@ it through to the rest of the pipeline.
 ## Usage
 
 Configure by setting the `jsWrap` key in `plugins` in your `brunch-config.js`
-file. All properties from the [plugin API](http://brunch.io/docs/plugins)
-are automatically copied over; you can customize `extension`, or `pattern`,
-for example.
-
-There is only one custom attribute for the plugin's configuration: `wrappers`.
-Take a look:
+file. Its structure is as follows:
 
 
 ```javascript
@@ -32,6 +27,7 @@ Take a look:
   plugins: {
     ...
     jsWrap: {
+      debug: [Boolean],
       wrappers: [
         {
           match: <Array[RegExp | String] | Regexp | String>,
@@ -54,6 +50,9 @@ are:
   contents.
 * `halt`: a boolean indicating whether further matches shouldn't be considered
   after this one.
+
+`debug` is a boolean value that will dump a bunch of matching information
+to the console if truthy to help you debug problems.
 
 
 ## Motivation
